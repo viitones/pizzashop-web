@@ -27,6 +27,7 @@ export function AccountMenu() {
   } = useQuery({
     queryKey: ['profile'],
     queryFn: getProfile,
+    staleTime: Infinity,
   })
 
   const {
@@ -35,6 +36,7 @@ export function AccountMenu() {
   } = useQuery({
     queryKey: ['managed-restaurant'],
     queryFn: getManageRestaurant,
+    staleTime: Infinity,
   })
 
   return (
