@@ -1,3 +1,4 @@
+/* eslint-disable @stylistic/max-len */
 import { api } from '@/lib/axios'
 
 export interface GetOrdersQuery {
