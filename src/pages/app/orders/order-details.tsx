@@ -76,7 +76,7 @@ export function OrderDetails({ orderId, open }: OrderDetailsProps) {
                 <TableHead>Produto</TableHead>
                 <TableHead className=" text-right">Qtd.</TableHead>
                 <TableHead className=" text-right">Preço</TableHead>
-                <TableHead className=" text-right">Suntotal</TableHead>
+                <TableHead className=" text-right">Subtotal</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
