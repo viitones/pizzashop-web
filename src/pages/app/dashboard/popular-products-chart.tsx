@@ -13,14 +13,6 @@ import {
 
 import colors from 'tailwindcss/colors'
 
-const data = [
-  { product: 'Pepperoni', amount: 40 },
-  { product: 'Mussarela', amount: 30 },
-  { product: 'Marguerita', amount: 20 },
-  { product: 'Quatro queijos', amount: 26 },
-  { product: 'Frango com catupiry', amount: 15 },
-]
-
 const COLORS = [
   colors.sky['500'],
   colors.amber['500'],
