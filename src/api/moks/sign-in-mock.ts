@@ -2,7 +2,8 @@ import { http, HttpResponse } from 'msw'
 import { SignInBody } from '../sign-in'
 
 export const signInMock = http.post<never, SignInBody>(
-  '/authenticate', async ({ request }) => {
+  '/authenticate',
+  async ({ request }) => {
     const { email } = await request.json()
 
     if (email === 'johndoe@example.com') {
