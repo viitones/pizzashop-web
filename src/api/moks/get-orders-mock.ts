@@ -6,10 +6,10 @@ type OrderStatus = GetOrdersResponse['orders'][number]['status']
 
 const statuses: OrderStatus[] = [
   'pending',
-  'canceled',
-  'processing',
   'delivering',
   'delivered',
+  'processing',
+  'canceled',
 ]
 
 const orders: Orders = Array.from({ length: 60 }).map((_, i) => {
