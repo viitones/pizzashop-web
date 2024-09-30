@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "dev:test": "vite --port 50789 --mode test",
+    "dev:test:ui": "exec playwright test --ui",
     "test": "vitest"
   },
   "dependencies": {

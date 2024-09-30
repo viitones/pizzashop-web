@@ -13,11 +13,11 @@ test('update profile successfully', async ({ page }) => {
 
   const toast = page.getByText('Perfil atualizado com sucesso')
 
-  expect(toast).toBeVisible()
+  await expect(toast).toBeVisible()
 
   await page.getByRole('button', { name: 'Close' }).click()
 
-  expect(page.getByRole('button', { name: 'Victor Pizza' }))
+  await expect(page.getByRole('button', { name: 'Victor Pizza' })).toBeVisible()
 
-  await page.waitForTimeout(250)
+  // await page.waitForTimeout(250)
 })
